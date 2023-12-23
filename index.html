@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>PI Learner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="game">
+        <div class="control-header">
+            <div class="game-input">
+                <input type="text" id="input">
+                <div class="remaining-errors">5</div>
+            </div>
+            <div class="game-settings">
+                <label for="rule_1">Infinite Tries</label>
+                <input type="checkbox" id="rule_1">
+                <label for="rule_2">Report errors</label>
+                <input type="checkbox" id="rule_2">
+            </div>
+        </div>
+        <div class="game-numbers">
+            <ul>
+                <li>1</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>

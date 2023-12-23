@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    padding: 20px;
+    margin: 50vh auto;
+    transform: translateY(-100%);
+    background-color: #fff2de;
+}
+
+.control-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(255, 185, 185);
+}
+
+.control-header .game-input {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+.control-header .game-input .remaining-errors {
+    padding: 5px;
+    color: #ffffff;
+    background-color: red;
+}
+
+.control-header .game-settings {
+    display: flex;
+    flex-direction: row;
+}
+
+.control-header .game-settings label {
+    align-self: center;
+    color: #5c5c5c;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.control-header .game-settings input[type="checkbox"] {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.game-numbers {
+    flex-grow: 1;
+    background-color: rgb(186, 205, 255);
+}
+
+.game-numbers ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.game-numbers ul li {
+    list-style-type: none;
+    padding: 0.2em 0.4em;
+    background-color: #def9ff;
+    border: 1px solid #5d5d5d;
+}
