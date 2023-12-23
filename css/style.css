@@ -11,8 +11,9 @@
     flex-direction: column;
     max-width: 750px;
     padding: 20px;
-    margin: 50vh auto;
-    transform: translateY(-100%);
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%, -100%);
     background-color: #fff2de;
 }
 
@@ -69,7 +70,19 @@
 
 .game-numbers ul li {
     list-style-type: none;
-    padding: 0.2em 0.4em;
+    text-align: center;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #def9ff;
     border: 1px solid #5d5d5d;
+}
+
+.settings {
+    position: absolute;
+    bottom: 0;
+}
+
+.settings-element {
+    display: flex;
+    width: 250px;
 }
