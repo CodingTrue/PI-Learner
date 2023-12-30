@@ -13,7 +13,7 @@
     padding: 20px;
     margin-top: 50vh;
     margin-left: 50vw;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -50%);
     background-color: #fff2de;
 }
 
@@ -41,18 +41,18 @@
 .control-header .game-settings {
     display: flex;
     flex-direction: row;
-}
-
-.control-header .game-settings label {
     align-self: center;
     color: #5c5c5c;
     font-weight: 600;
     margin-right: 5px;
 }
 
+.control-header .game-settings div:not(:last-child) {
+    margin-right: 20px;
+}
+
 .control-header .game-settings input[type="checkbox"] {
     align-self: center;
-    margin-right: 20px;
 }
 
 .game-numbers {
@@ -64,6 +64,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 25vh;
     margin: 0;
     padding: 0;
 }
@@ -75,14 +77,4 @@
     min-height: 20px;
     background-color: #def9ff;
     border: 1px solid #5d5d5d;
-}
-
-.settings {
-    position: absolute;
-    bottom: 0;
-}
-
-.settings-element {
-    display: flex;
-    width: 250px;
 }
