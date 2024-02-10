@@ -37,7 +37,7 @@ function game_reset() {
 
 function game_over() {
     input.attr("disabled", "true")
-    remaining.text((pointer - error_count) + " / " + GAME_NUMBERS)
+    remaining.text(pointer + " / " + GAME_NUMBERS)
 
     for (let i = pointer; i < PI_STRING.length; i++) {
         if (i > GAME_NUMBERS) break;
