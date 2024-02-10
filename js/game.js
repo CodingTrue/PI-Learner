@@ -15,6 +15,7 @@ function generate_number_fields() {
     $(".game-numbers ul").append("<li>3</li>")
     $(".game-numbers ul").append("<li>.</li>")
     
+    
     for (let i = 0; i < GAME_NUMBERS; i++) {
         $(".game-numbers ul").append("<li id='" + i + "'></li>")
     }
@@ -33,14 +34,18 @@ function game_reset() {
     pointer = 0;
     error_count = 0;
     last_was_error = false;
+
+    remaining.text(5)
+    input.prop("disabled", false)
+    $(".restart-button").css("display", "none")
 }
 
 function game_over() {
-    input.attr("disabled", "true")
+    input.prop("disabled", true)
     remaining.text(pointer + " / " + GAME_NUMBERS)
+    $(".restart-button").css("display", "flex")
 
-    for (let i = pointer; i < PI_STRING.length; i++) {
-        if (i > GAME_NUMBERS) break;
+    for (let i = pointer; i < GAME_NUMBERS; i++) {
         numbers.children().eq(i + 2)[0].innerHTML = PI_STRING[i];
         numbers.children().eq(i + 2).css("color", "#ff0000")
     }
@@ -71,6 +76,11 @@ input.on('keypress', function(e) {
 })
 
 $("#game-numbers").on('input', function(e) {
+    game_reset()
+    generate_number_fields()
+})
+
+$(".restart-button button").on('click', function(e) {
     game_reset()
     generate_number_fields()
 })

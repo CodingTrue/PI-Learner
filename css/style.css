@@ -78,3 +78,19 @@
     background-color: #def9ff;
     border: 1px solid #5d5d5d;
 }
+
+.restart-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.restart-button button {
+    width: 100%;
+    cursor: pointer;
+    height: 75px;
+    font-size: 27px;
+    color: #ffffff;
+    background-color: #ff7e53;
+}
