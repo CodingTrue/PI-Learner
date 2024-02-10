@@ -6,15 +6,19 @@
     outline: none;
 }
 
+html {
+    background-color: #a5a5a5;
+}
+
 .game {
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    max-width: 1000px;
     padding: 20px;
     margin-top: 50vh;
     margin-left: 50vw;
     transform: translate(-50%, -50%);
-    background-color: #fff2de;
+    background-color: #4d4d4d;
 }
 
 .control-header {
@@ -22,7 +26,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
-    background-color: rgb(255, 185, 185);
+    background-color: #727272;
 }
 
 .control-header .game-input {
@@ -35,15 +39,15 @@
 .control-header .game-input .remaining-errors {
     padding: 5px;
     color: #ffffff;
-    background-color: red;
+    background-color: #555555;
 }
 
 .control-header .game-settings {
     display: flex;
     flex-direction: row;
     align-self: center;
-    color: #5c5c5c;
-    font-weight: 600;
+    color: #d7d7d7;
+    font-weight: 500;
     margin-right: 5px;
 }
 
@@ -57,7 +61,7 @@
 
 .game-numbers {
     flex-grow: 1;
-    background-color: rgb(186, 205, 255);
+    background-color: #727272;
 }
 
 .game-numbers ul {
@@ -75,7 +79,8 @@
     text-align: center;
     min-width: 20px;
     min-height: 20px;
-    background-color: #def9ff;
+    color: #4e4e4e;
+    background-color: #c7c7c7;
     border: 1px solid #5d5d5d;
 }
 

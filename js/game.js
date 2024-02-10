@@ -47,7 +47,7 @@ function game_over() {
 
     for (let i = pointer; i < GAME_NUMBERS; i++) {
         numbers.children().eq(i + 2)[0].innerHTML = PI_STRING[i];
-        numbers.children().eq(i + 2).css("color", "#ff0000")
+        numbers.children().eq(i + 2).css("color", "#ff3300")
     }
 }
 
@@ -59,14 +59,14 @@ input.on('keypress', function(e) {
     element[0].innerHTML = key;
 
     if (!is_right(key)) {
-        element.css("color", "red")
+        element.css("color", "#ff3300")
         error_count++;
 
         if (!infinite_tries()) remaining.text(parseInt(remaining.text()) - 1)
         last_was_error = true;
     } else {
         if (last_was_error) {
-            element.css("color", "green")
+            element.css("color", "#009933")
             last_was_error = false;
         }
         pointer++;
