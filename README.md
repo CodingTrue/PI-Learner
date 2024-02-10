@@ -13,6 +13,7 @@ Happy learning!
 
 ## What is planned / done?
 - [X] Base Game
-- [ ] better Design
+- [X] better Design
 - [ ] Gamemodes
 - [ ] Euler's Number
+- [ ] Local backend for saving and statistics
