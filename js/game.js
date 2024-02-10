@@ -85,5 +85,12 @@ $(".restart-button button").on('click', function(e) {
     generate_number_fields()
 })
 
+$(document).on('keyup', function(e) {
+    if (e.key != "Escape") return;
+
+    game_reset()
+    generate_number_fields()
+})
+
 game_reset()
 generate_number_fields()
